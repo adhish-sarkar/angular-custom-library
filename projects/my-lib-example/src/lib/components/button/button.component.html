@@ -1,0 +1,14 @@
+<button
+    [style.width]="btnWidth"
+    [style.height]="btnHeight"
+    [disabled]="isBtnDisable"
+    [ngClass]="{
+        btnRound: isBtnRound, 
+        btnPrimary: isBtnPrimary,
+        btnSecondary: isBtnSeconday,
+        btnDanger: isBtnDanger,
+    }"
+    (click)="onClickBtn(!isBtnDisable)"
+>
+    {{btnText}}
+</button>

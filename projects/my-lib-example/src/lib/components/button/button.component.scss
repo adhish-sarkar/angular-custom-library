@@ -1,0 +1,54 @@
+@font-face {
+    font-family: Manrope;
+    src: url('../../../assets/Manrope-Regular.ttf');
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    outline: 4px solid transparent;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.132rem;
+}
+
+button:disabled{
+    cursor: auto;
+    background: rgba(134, 134, 134, 0.854);
+    color: rgba(219, 219, 219, 0.719);
+    outline: transparent;
+}
+
+.btnRound{
+    border-radius: 999px;
+}
+
+.btnPrimary{
+    background: rgba(44, 44, 236, 0.945);
+    color: white;
+}
+
+.btnPrimary:hover {
+    outline-color: rgba(117, 166, 234, 0.509);
+}
+
+.btnSecondary{
+    background: transparent;
+    border:1.5px solid rgba(44, 44, 236, 0.945);
+    color: rgba(44, 44, 236, 0.945);
+}
+
+.btnSecondary:hover {
+    outline-color: rgba(8, 36, 241, 0.662);
+}
+
+.btnDanger{
+    background: rgba(239, 116, 169, 0.797);
+    color: black;
+}
+
+.btnDanger:hover{
+    outline-color: rgba(250, 168, 168, 0.63);;
+}

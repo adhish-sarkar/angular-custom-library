@@ -1,0 +1,28 @@
+<div class="inp-group" [style.width]="setWidth">
+    <label [ngClass]="labelActive || inputHasValue ? 'labelActive' : ''" >{{labelText}}</label>
+    <input 
+        [type]="type" 
+        [style.height]="'28px'" 
+        [placeholder]=""
+        [ngClass]="{
+            disableBtn: isDisable, 
+            'err-btn': formField.invalid && (formField.touched || formField.dirty)
+        }"
+        [value]="value"
+        (input)="onEnter($event)"
+        (focus)="labelActive = true"
+        (blur)="onTouched(); labelActive  = false"
+        [disabled]="isDisable"
+        autocomplete="off"
+    >
+    <div *ngIf="formField.hasError('required') && (formField.touched || formField.dirty)" 
+        style="color: red;" >
+        *Required Field couldn't be entry
+    </div>
+
+    <div 
+        *ngIf="formField.invalid && (formField.touched || formField.dirty)" 
+        style="color: red;">
+        {{errorMessage | titlecase }}
+    </div>
+</div>

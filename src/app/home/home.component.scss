@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border: 2px solid goldenrod;
+    border-radius: 8px;
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+    background-color: white; /* Change background color to black with 80% opacity */
+}
+
+pre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border: 2px solid goldenrod;
+    border-radius: 8px;
+    width: 512px;
+    height: 400px;
+    padding: 32px;
+    background-color: white; /* Change background color to black with 80% opacity */
+}

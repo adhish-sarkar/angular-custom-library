@@ -1,0 +1,55 @@
+<div class="container">
+    <form [formGroup]="testForm">
+        <acl-input 
+            [labelText]="'Name'"
+            [placeholderText]="'Enter name'"
+            [setWidth]="'80vw'"
+            [setHeight]="'40px'"
+            [type]="'text'"
+            [filedName]="'name'"
+            [parentForm]="testForm"
+            [errorMessage]="''"
+            formControlName="name"
+        >
+        </acl-input>
+    
+        <acl-input 
+            [labelText]="'Email'"
+            [placeholderText]="'Enter email'"
+            [setWidth]="'80vw'"
+            [setHeight]="'40px'"
+            [type]="'email'"
+            [filedName]="'email'"
+            [parentForm]="testForm"
+            [errorMessage]="'Invalid Email Address'"
+            formControlName="email"
+        >
+        </acl-input>
+    
+        <acl-input 
+            [labelText]="'Password'"
+            [placeholderText]="'Enter password'"
+            [setWidth]="'80vw'"
+            [setHeight]="'40px'"
+            [type]="'password'"
+            [filedName]="'password'"
+            [parentForm]="testForm"
+            [errorMessage]="''"
+            formControlName="password"
+        >
+        </acl-input>
+    
+        <acl-button
+            [btnText]="'Submit'"
+            [btnWidth]="'80vw'"
+            [btnHeight]="'48px'"
+            [btnType]="'primary'"
+            [isBtnDisable]="false"
+            [isBtnRound]="false"
+            (clickedBtnResponse)="onClickForm()"
+        >
+        </acl-button>
+    </form>
+
+    <pre>{{clickOption | json}}</pre>
+</div>
