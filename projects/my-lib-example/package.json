@@ -1,6 +1,7 @@
 {
   "name": "acl-library",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "description": "A simple library to demonstrate Angular Library Creation",
   "author": {
     "name": "Adhish Sarkar",
     "email": "sarkaradhish131@gmail.com"
@@ -9,6 +10,7 @@
     "@angular/common": "^16.2.0",
     "@angular/core": "^16.2.0"
   },
+  "license": "MIT",
   "dependencies": {
     "tslib": "^2.3.0"
   },
